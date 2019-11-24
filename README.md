@@ -1,4 +1,4 @@
 # DeerBio
  for genomics\
- develop by lzlniu\
+ develop by lzlniu
  
