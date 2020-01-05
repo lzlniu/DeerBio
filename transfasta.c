@@ -14,7 +14,7 @@ int main()
 {
 	FILE * in, * out;
 	char nucl, infile[MAX_LENGTH] = { 0 }, outfile[MAX_LENGTH] = { 0 };
-	int i = 0;
+	int i = 0, j = 0;
 	printf("input file name:");
 	scanf("%s", infile, MAX_LENGTH);
 	printf("output file name:");
@@ -35,11 +35,13 @@ int main()
 		if (nucl == 'A' || nucl ==  'C' || nucl ==  'G' || nucl ==  'T')
 		{
 			fputc(nucl, out);
+			i = i++;
 		}
-		i = i++;
+		else
+			j = j++;
 	}
 	putchar(10);
-	printf("total count: %d\n",i);
+	printf("total: %d\nnucl: %d\nother: %d\n",j+i,i,j);
 	fclose(in);
 	fclose(out);
 	return 0;
