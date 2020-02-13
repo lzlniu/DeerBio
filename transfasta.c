@@ -4,9 +4,9 @@
 #define MAX_LENGTH 64
 
 /*
-Author:Zelin Li
-Date:2020-01-05
-utility:extract the AGCT from a file.
+author:Zelin Li
+date:2020.01.05
+utility:extract the AGCT from a file and form a sequence file.
 usage:click to open the transfasta.exe, then type in the input and output files' FilePath. 
 */
 
