@@ -1,0 +1,1 @@
+g++ -o "/public/home/lizelin/projects/gapfinder/bin/x64/Debug/gapfinder.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /public/home/lizelin/projects/gapfinder/obj/x64/Debug/main.o

@@ -1,0 +1,12 @@
+﻿  正在验证源
+  正在将源远程复制到“159.226.106.33”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+F:\Develop\lzlniu_github\gapfinder\main.c(92,16): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+F:\Develop\lzlniu_github\gapfinder\main.c(92,16): warning :    92 |         nucl = fgetc(in); ++i;
+F:\Develop\lzlniu_github\gapfinder\main.c(92,16): warning :       |                ^~~~~
+  正在链接对象
+  gapfinder.vcxproj -> F:\Develop\lzlniu_github\gapfinder\bin\x64\Debug\gapfinder.out
