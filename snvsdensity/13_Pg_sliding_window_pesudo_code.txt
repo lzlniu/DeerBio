@@ -1,0 +1,25 @@
+genome=40117;
+window=200;
+
+for (i=0 ; i<=genome-window; i++) {
+	s=i;
+	e=i+window;
+	fp=fopen("all13.txt","r");
+	fscanf(fp,"%d\t%d",&fs,&fe);
+	while (fs>s && fe<e) {
+		if (fs>=fe) {
+			a;
+		}
+		else if (fs<fe) {
+			a;
+		}
+		fscanf(fp,"%d\t%d",&fs,&fe);
+	}
+}
+
+if (i>genome-window && i<genome) {
+	while(i<genome) {
+		a;
+		i++;
+	}
+}

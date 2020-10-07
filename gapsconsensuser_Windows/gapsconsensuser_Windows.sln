@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gapsconsensuser_Windows", "gapsconsensuser_Windows.vcxproj", "{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Debug|x64.ActiveCfg = Debug|x64
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Debug|x64.Build.0 = Debug|x64
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Debug|x86.Build.0 = Debug|Win32
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Release|x64.ActiveCfg = Release|x64
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Release|x64.Build.0 = Release|x64
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Release|x86.ActiveCfg = Release|Win32
+		{DD7EF23B-B0F0-4693-B89A-3837F0F191EC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E3AC681-9FB6-4AEC-9700-2E3925F96866}
+	EndGlobalSection
+EndGlobal
