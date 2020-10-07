@@ -36,7 +36,7 @@ void list_readandcombined(char file_name[], list L, int range) {
             //exit(0);
         }
         fscanf_s(in, "%d\t%d", &p->s, &p->e);
-        //while (pre->next != NULL && p->s > pre->next->s) pre = pre->next; //µÚÒ»ÁÐÉýÐò²åÈë
+        //while (pre->next != NULL && p->s > pre->next->s) pre = pre->next; //ç¬¬ä¸€åˆ—å‡åºæ’å…¥
         if (pre != NULL) {
             if (p->e > pre->e&& p->s == pre->s) {
                 //printf("%d>%d,free %d\n", p->e, pre->next->e, p->e);
@@ -59,7 +59,7 @@ void list_readandcombined(char file_name[], list L, int range) {
                 p->next = L->next;
                 L->next = p;
             }
-        } //µ±µÚÒ»ÁÐÏàµÈÊ±Ö»²åÈë×î³¤µÄ£¬µÚÒ»ÁÐ²»ÏàµÈÒ²²åÈë
+        } //å½“ç¬¬ä¸€åˆ—ç›¸ç­‰æ—¶åªæ’å…¥æœ€é•¿çš„ï¼Œç¬¬ä¸€åˆ—ä¸ç›¸ç­‰ä¹Ÿæ’å…¥
         else {
             p->next = L->next;
             L->next = p;
@@ -100,7 +100,7 @@ void list_sort(list L) {
 
 void list_write(list L) {
     FILE* out;
-    out = fopen("all13combined.txt", "w");
+    out = fopen("all_combined.txt", "w");
     if (out == NULL) { printf("cann't open output file\n"); return; }
     struct node* p;
     if (L->next != NULL) {
@@ -136,7 +136,7 @@ void list_count(list L) {
     halfwindow = (int)(window / 2);
     struct node* p;
     FILE* out;
-    out = fopen("all13out.txt", "w");
+    out = fopen("all_out.txt", "w");
     if (!out) { printf("can't open output file\n"); return; }
     if (L->next != NULL) {
         p = L->next;
@@ -147,7 +147,7 @@ void list_count(list L) {
             p = L->next;
             while (p != NULL && p->e < s) p = p->next;
             while (p != NULL && p->e <= e) {
-                //printf("%d\t%d\t%d\t%d\n", s, e, p->s, p->e); //ÓÃÓÚÅÅ²ébug
+                //printf("%d\t%d\t%d\t%d\n", s, e, p->s, p->e); //ç”¨äºŽæŽ’æŸ¥bug
                 if (p->s >= p->e) count++;
                 else if (p->s < p->e) {
                     if (p->s >= s) count = count + (p->e - p->s + 1);
@@ -173,7 +173,7 @@ void list_count(list L) {
                 }
                 while (p != NULL && p->e < s) p = p->next;
                 while (p != NULL) {
-                    //printf("%d\t%d\t%d\t%d\n", s, e, p->s, p->e); //ÓÃÓÚÅÅ²ébug
+                    //printf("%d\t%d\t%d\t%d\n", s, e, p->s, p->e); //ç”¨äºŽæŽ’æŸ¥bug
                     if (p->s >= p->e) count++;
                     else if (p->s < p->e) {
                         if (p->s >= s) count = count + (p->e - p->s + 1);
@@ -201,9 +201,9 @@ int main() {
     list_sort(A);
     //list_write(A);
     list_count(A);
-    //printf("type all13out.txt:");
+    //printf("type all_out.txt:");
     //scanf_s("%s", &file_name, 64);
-    //list_readandcombined(file_name, B, 0); //all13out.txt
+    //list_readandcombined(file_name, B, 0); //all_out.txt
     //list_sort(B);
     list_destory(A);
     //list_destory(B);
@@ -222,7 +222,7 @@ int main() {
             fscanf_s(in, "%d\t%d", &fs, &fe);
             while (fs<=s) fscanf_s(in, "%d\t%d", &fs, &fe);
             while (fs >= s && fe <= e) {
-                //printf("%d\t%d\t%d\t%d\n", s, e, fs, fe); //ÓÃÓÚÅÅ²ébug
+                //printf("%d\t%d\t%d\t%d\n", s, e, fs, fe); //ç”¨äºŽæŽ’æŸ¥bug
                 if (fs >= fe) {
                     count++;
                 }
